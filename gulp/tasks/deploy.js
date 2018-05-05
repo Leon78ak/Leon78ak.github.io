@@ -2,7 +2,7 @@
 
 module.exports = function () {
    var options = {
-        remoteUrl: "https://github.com/Leon78ak/Leon78ak.github.io.git",
+        remoteUrl: "https://github.com/Leon78ak/Leon78ak.github.io",
         branch: "master"
     };
 
