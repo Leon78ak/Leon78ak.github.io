@@ -1,0 +1,70 @@
+@mixin tablets() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin section-title() {
+  margin: 0;
+
+  font-size: $font-size--h2;
+  line-height: $line-height;
+  color: $red;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+@mixin section-sub-title() {
+  margin: 0;
+
+  font-size: $font-size--h3;
+  line-height: $line-height;
+  color: $red;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+
+
+@mixin ul-unstyled {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+// Генератор правил для ячейки
+// Возвращает правила для ячейки.
+//
+// Принимает:
+// $column:      1                     - ширина (кол-во колонок для этой ячейки)
+// $columns:     $grid-columns;        - общее количество ячеек на 1 ряд
+// $gutter:      $grid-gutter-width    - промежуток между ячейками
+// $flex-grow:   0                     - индивидуальный flex-grow
+// $flex-shrink: 0                     - индивидуальный flex-shrink
+
+// @mixin col($column; $columns: $grid-columns; $gutter: $grid-gutter-width; $flex-grow: 0; $flex-shrink: 0) {
+//   $width: ~"calc((100% / "$columns~" - ("$gutter~" / "$column~")) * "$column~")";
+//   flex: $flex-grow $flex-shrink $width;
+//   width: $width;
+
+//     & when not ($gutter = false) {
+//     margin-left: ($gutter / 2);
+//     margin-right: ($gutter / 2);
+//   }
+// }
+
+// @mixin make-col($column; $columns: $grid-columns; $gutter: $grid-gutter-width; $flex-grow: 0; $flex-shrink: 0) {
+//   @include col($column; $columns; $gutter; $flex-grow; $flex-shrink);
+// }
+

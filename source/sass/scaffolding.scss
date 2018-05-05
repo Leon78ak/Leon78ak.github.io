@@ -1,0 +1,86 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+
+   src: url("fonts/gilroylight.woff2") format(woff2),
+    url("fonts/gilroylight.woff") format(woff);
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+
+  src: url("fonts/gilroyextrabold.woff2") format(woff2),
+    url("fonts/gilroyextrabold.woff") format(woff);
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-style: normal;
+
+  src: url("fonts/opensanslight.woff2") format(woff2),
+    url("fonts/opensanslight.woff") format(woff);
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 14px;
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $Gilroy;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $light;
+  color: $black;
+
+  background-color: $bg-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,84 @@
+{
+  "navPages": [
+    {
+      "name": "Обо мне",
+      "address": "#about"
+    },
+    {
+      "name": "Портфолио",
+      "address": "#portfolio"
+    },
+    {
+      "name": "Контакты" ,
+      "address": "#contacts"
+    }
+  ],
+  "projectData": [
+    {
+      "name": "keksobooking",
+      "features": ["ES5", "Ajax", "Drag'n'Drop", "Templates", "Accessibility", "Validation", "ESLint"],
+      "description": "Одностраничное приложение для размещения объявлений об аренде недвижимости. Использована шаблонизация, валидация формы, технология Ajax, реализована фильтрация объявлений по выбранным параментрам.",
+      "intensive": "javascript",
+      "intensiveTitle": "Профессиональный JavaScript, уровень 1"
+    },
+    {
+      "name": "code-and-magick",
+      "features": ["ES5", "Ajax", "Drag'n'Drop", "Templates", "Accessibility", "Validation", "ESLint"],
+      "description": "Одностраничное приложение для размещения объявлений об аренде недвижимости. Использована шаблонизация, валидация формы, технология Ajax, реализована фильтрация объявлений по выбранным параментрам.",
+      "intensive": "javascript",
+      "intensiveTitle": "Профессиональный JavaScript, уровень 1"
+    },
+    {
+      "name": "mishka",
+      "features": ["HTML5", "CSS3", "Adaptive layout", "БЭМ", "Flex-box", "Accessibility", "Less", "Gulp", "WebP", "SVG", "Retina", "StyleLint", "Pixel-perfect"],
+      "description": "Адаптивная сетка, верстка с использованием flex-box, доступность (все интерактивные элементы доступны при использовании клавиатуры), кроссбраузерность (в т. ч. IE11). Реализованы слайдер и открытие модальных окон на JavaScript. Выполнена ретинизация и оптимизация изображений, использован SVG-спрайт.",
+      "intensive": "adaptive",
+      "intensiveTitle": "Профессиональный HTML и CSS, уровень 2"
+    },
+    {
+      "name": "cat-energy",
+      "features": ["HTML5", "CSS3", "Adaptive layout", "БЭМ", "Flex-box", "Accessibility", "Less", "Gulp", "WebP", "SVG", "Retina", "StyleLint", "Pixel-perfect"],
+      "description": "Адаптивная сетка, верстка с использованием flex-box, доступность (все интерактивные элементы доступны при использовании клавиатуры), кроссбраузерность (в т. ч. IE11). Выполнена ретинизация и оптимизация изображений, использован SVG-спрайт.",
+      "intensive": "adaptive",
+      "intensiveTitle": "Профессиональный HTML и CSS, уровень 2"
+    },
+    {
+      "name": "device",
+      "features": ["HTML5", "CSS3", "БЭМ", "Flex-box", "Accessibility", "Less", "Gulp", "SVG", "Pixel-perfect"],
+      "description": "Фиксированная сетка, верстка с использованием flex-box, доступность (все интерактивные элементы доступны при использовании клавиатуры), кроссбраузерность (в т. ч. IE11). Реализованы 2 слайдера на CSS и открытие модальных окон на JavaScript.",
+      "intensive": "htmlcss",
+      "intensiveTitle": "Профессиональный HTML и CSS, уровень 1"
+    },
+    {
+      "name": "gllacy",
+      "features": ["HTML5", "CSS3", "БЭМ", "Flex-box", "Accessibility", "Less", "Gulp", "SVG", "Pixel-perfect"],
+      "description": "Фиксированная сетка, flex-box, доступность, кроссбраузерность (в т.ч. IE11). Реализованы слайдер на CSS и открытие модальных окон на JavaScript.",
+      "intensive": "htmlcss",
+      "intensiveTitle": "Профессиональный HTML и CSS, уровень 1"
+    },
+    {
+      "name": "technomarkt",
+      "features": ["HTML5", "CSS3", "БЭМ", "Flex-box", "Accessibility", "Less", "Gulp", "SVG", "Pixel-perfect"],
+      "description": "Фиксированная сетка, flex-box, доступность, кроссбраузерность (в т. ч. IE11). Реализовано открытие модальных окон на JavaScript.",
+      "intensive": "htmlcss",
+      "intensiveTitle": "Профессиональный HTML и CSS, уровень 1"
+    }
+  ],
+  "socials": [
+    {
+      "name": "skype",
+      "link": "skype:",
+      "title": "Я в скайпе"
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/",
+      "title": "Я на гитхаб"
+    },
+    {
+      "name": "vk",
+      "link": "https://vk.com/",
+      "title": "Я в контакте"
+    }
+  ]
+}

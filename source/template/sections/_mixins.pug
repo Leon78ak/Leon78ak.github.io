@@ -1,0 +1,115 @@
+mixin nav(mods)
+
+  //- Принимает:
+  //- mods {string} - список модификаторов
+
+  -
+    // список модификаторов
+    var newMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        newMods = newMods + ' main-nav--' + modsList[i].trim() + ' ';
+       var allMods = newMods.trim();
+      }
+    }
+
+  nav.main-nav(class=` ${allMods}`)&attributes(attributes)
+    button.main-nav__toggle(type="button")
+      span.visually-hidden Открыть меню
+    .main-nav__container
+      ul.main-nav__list
+        each item in navPages
+          li.main-nav__item
+            a.main-nav__link(href="#" data-hover=`${item.name}`)=`${item.name}`
+
+
+mixin project()
+
+  each item in projectData
+    article.project
+      h3.project__title=` ${item.name}`
+          span.project__name
+            | Проект
+      .project__wrapper
+        a.project__link(href="https://Leon78ak.github.io/430697-" + `${item.name}`)
+          p.project__image
+            img(src="img/" + `${item.name}`+ "-2.jpg" width="300" height="250" alt="проект " + `${item.name}`)
+          .project__actions
+            p.project__description
+              | выполнен на учебном курсе
+              br
+              a(href="https://htmlacademy.ru/intensive/htmlcss") #{item.intensiveTitle}
+              |  в HTML Academy
+            a.btn(class=' btn--scale-effect  project__btn')
+              span
+                | Посмотреть
+
+
+mixin socials()
+
+  ul.socials
+    each social in socials
+      li.socials__item
+        a.socials__link(class=' socials__link--' + `${social.name}`)&attributes({'href': `${social.link}`, 'title': `${social.title}`})
+          //- svg(width="24" height="25")
+          //-   use(xmlns:xlink="http://www.w3.org/1999/xlink" www.w3.org="" xlink:href="#icon-" + `${social.name}`)
+          +icon(`${social.name}`, 'red')
+
+
+mixin breadcrumbs(mods)
+
+  //- Принимает:
+  //-   mods  {string} - список модификаторов
+  //- Вызов:
+        +breadcrumbs()
+          +breadcrumbs-item('Главная', '/home')
+          +breadcrumbs-item('Услуги', '/services')
+          +breadcrumbs-item('Стриптиз')
+  -
+    // список модификаторов
+    var newMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        newMods = newMods + ' breadcrumbs--' + modsList[i].trim() + ' ';
+      var allMods = newMods.trim();
+      }
+    }
+  ul.breadcrumbs(class=` ${allMods}`, aria-label='Breadcrumbs', role='navigation')&attributes(attributes)
+    block
+
+//- breadcrumbs
+mixin breadcrumbs-item(text, href, mods)
+
+  //- Принимает:
+  //-   text   {string} - содержимое пункта
+  //-   href   {string} - ссылка этого пункта (если пустая, то это не ссылка, а span)
+  //-   mods   {string} - список модификаторов
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' breadcrumbs--' + modsList[i].trim();
+      }
+    }
+  li.breadcrumbs__item(class=allMods)&attributes(attributes)
+    if(typeof(href) !== 'undefined' && href)
+      a(href=href)!= text
+    else
+      span!= text
+
+
+//- +breadcrumbs('opened, no-js, closed, popup')
+//-   +breadcrumbs-item('Главная', '/home')
+//-   +breadcrumbs-item('Услуги', '/services')
+//-   +breadcrumbs-item('Стриптиз')
+
+
+mixin icon(name,mod)
+  - mod = ("icon--" + mod) || ''
+  svg(class="icon  icon--" + name + '  ' + mod)&attributes({'width': '2rem', 'height': '2rem'})
+    use(xlink:href="img/svg/sprite/symbol/sprite.svg#" + name)
+
