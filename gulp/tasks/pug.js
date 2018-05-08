@@ -19,5 +19,6 @@ module.exports = function () {
         indentSize: 2
       }))
       .pipe($.gulp.dest('./build/'));
+      .pipe($.gulp.dest('.'))
   });
 };
