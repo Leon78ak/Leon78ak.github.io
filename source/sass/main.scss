@@ -1,8 +1,10 @@
-@import "variables.scss";
+@import "layout/variables.scss";
 
-@import "helpers/**/*.scss";
+@import "layout/fonts.scss";
 
-@import "scaffolding.scss";
+@import "helpers/mixins.scss";
+
+@import "layout/scaffolding.scss";
 
 @import "_sprite.scss";
 

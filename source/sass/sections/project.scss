@@ -92,6 +92,15 @@
   margin-bottom: 5%;
 
   text-align: center;
+
+  a {
+    color: blue;
+  }
+}
+
+.project__description a:hover,
+.project__description a:focus {
+  text-decoration: underline;
 }
 
 .project:hover img {

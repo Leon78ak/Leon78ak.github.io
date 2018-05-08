@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 50;
+  z-index: 999;
 
   display: none;
   flex-direction: column;
@@ -36,7 +36,7 @@
 
   top: 20px;
   right: 3.5%;
-  z-index: 999;
+  z-index: 1000;
 
   display: flex;
   justify-content: center;

@@ -1,0 +1,48 @@
+section.modal
+  .modal__wrapper
+    form.form(
+      class=' modal__form'
+      action='https://formspree.io/ak_78leon@mail.ru'
+      method='post'
+    )
+      .form__field
+        label.form__input-wrapper
+          input.form__input(
+            type='text'
+            name='name'
+            required
+          )
+          span.form__input-placeholder
+            | Имя
+      .form__field
+        label.form__input-wrapper
+          input.form__input(
+            type='email'
+            name='email'
+            required
+          )
+          span.form__input-placeholder
+            | E-mail
+      .form__field
+        label.form__input-wrapper
+          textarea.form__input(
+            name='name'
+            required
+          )
+          span.form__input-placeholder
+            | Ваше сообщение
+      .form__button-wrapper
+        button.btn(
+          class=' btn--scale-effect  form__reset'
+          type='reset'
+          value='Сбросить'
+        )
+          span
+            | Сбросить
+        button.btn(
+          class=' btn--scale-effect  form__submit'
+          type='submit'
+          value='Отправить'
+        )
+          span
+            | Отправить
