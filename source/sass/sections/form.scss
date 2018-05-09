@@ -16,9 +16,12 @@
   position: relative;
 
   display: block;
-  padding: 5px 0;
 
   border-bottom: 2px solid #646e76;
+
+  @include tablets {
+    padding: 5px 0;
+  }
 }
 
 .form__input-placeholder {
@@ -30,30 +33,32 @@
   height: 100%;
   padding: 0 5px;
 
-  line-height: 38px;
+  line-height: 20px;
   color: #646e76;
 
   transition: all 0.3s;
 
-  // &--email {
-  //   white-space: nowrap;
-  // }
-
   @include tablets {
     font-size: 25px;
+    line-height: 38px;
   }
 }
 
 .form__input {
   width: 100%;
-  padding: 10px;
+  padding: 7px;
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 38px;
 
   background: none;
   border: none;
   outline: none;
+
+  @include tablets {
+    padding: 10px;
+    font-size: 18px;
+  }
 }
 
 .form textarea {
@@ -62,18 +67,24 @@
 
 .form__input:focus ~ .form__input-placeholder,
 .form__input:valid ~ .form__input-placeholder {
-    font-size: 16px;
+    font-size: 13px;
     transform: translateY(-20px);
+
+    @include tablets {
+      font-size: 16px;
+    }
 }
 
 .form__button-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   width: 100%;
 }
 
-.form__button-wrapper button {
-  width: 40%;
+.form__submit {
+  width: 60%;
+  margin: auto;
 }

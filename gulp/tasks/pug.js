@@ -18,7 +18,7 @@ module.exports = function () {
       .pipe($.gp.htmlBeautify({
         indentSize: 2
       }))
-      .pipe($.gulp.dest('./build/'));
-      .pipe($.gulp.dest('.'))
+      .pipe($.gulp.dest('./build/'))
+      .pipe($.gulp.dest('.'));
   });
 };

@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Leon78ak/Leon78ak.github.io.git/issues"
   },
-  "homepage": "https://github.com/Leon78ak/Leon78ak.github.io.git#readme",
+  "homepage": "https://github.com/Leon78ak/Leon78ak.github.io.git",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "browser-sync": "^2.23.6",
