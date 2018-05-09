@@ -11,6 +11,7 @@ module.exports = function () {
           }
         })
       }))
-      .pipe($.gulp.dest('./build/js'));
+      .pipe($.gulp.dest('./build/js'))
+      .pipe($.gulp.dest('./js'));
   });
 };
