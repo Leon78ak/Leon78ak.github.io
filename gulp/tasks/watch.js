@@ -9,6 +9,6 @@ module.exports = function () {
     $.gulp.watch('./source/img/svg/*.svg',
       $.gulp.series('svg'));
     $.gulp.watch('./source/js/*.js',
-      $.gulp.series('js'));
+      $.gulp.series('script'));
   });
 };

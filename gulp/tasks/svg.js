@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
 module.exports = function() {
-  $.gulp.task("svg", function() {
-    return $.gulp.src("./source/img/svg/*.svg")
+  $.gulp.task('svg', function() {
+    return $.gulp.src('./source/img/svg/*.svg')
     // minify svg
       .pipe($.gp.svgmin({
         js2svg: {
@@ -12,23 +12,23 @@ module.exports = function() {
       // remove all fill, style and stroke declarations in out shapes
       .pipe($.gp.cheerio({
         run: function ($) {
-          $("[fill]").removeAttr("fill");
-          $("[stroke]").removeAttr("stroke");
-          $("[style]").removeAttr("style");
+          $('[fill]').removeAttr('fill');
+          $('[stroke]').removeAttr('stroke');
+          $('[style]').removeAttr('style');
         },
         parserOptions: { xmlMode: true }
       }))
-      // cheerio plugin create unnecessary string "&gt;", so replace it.
-      .pipe($.gp.replace("&gt;", ">"))
+      // cheerio plugin create unnecessary string '&gt;', so replace it.
+      .pipe($.gp.replace('&gt;', '>'))
       // build svg sprite.svg
       .pipe($.gp.svgSprite({
         mode: {
           symbol: {
-            sprite: "sprite.svg",
+            sprite: 'sprite.svg',
             render: {
               scss: {
-                dest:"../../../../sass/_sprite.scss",
-                template: "./source/sass/templates/_sprite_template.scss"
+                dest:'../../../../sass/_sprite.scss',
+                template: './source/sass/templates/_sprite_template.scss'
               }
             }
           }
@@ -61,11 +61,11 @@ module.exports = function() {
 //     .pipe(svgSprite({
 //       mode: {
 //         symbol: {
-//           sprite: "../sprite.svg",
+//           sprite: '../sprite.svg',
 //           render: {
 //             scss: {
 //               dest:'../../../sass/_sprite.scss',
-//               template: assetsDir + "sass/templates/_sprite_template.scss"
+//               template: assetsDir + 'sass/templates/_sprite_template.scss'
 //             }
 //           }
 //         }

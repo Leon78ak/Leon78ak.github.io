@@ -16,6 +16,7 @@ module.exports = function () {
           '> 1%'
         ]
       }))
+      // .pipe($.gp.cssComb())
       // .pipe($.gp.cssUnit({
       //   type: 'px-to-rem',
       //   rootSize: 16

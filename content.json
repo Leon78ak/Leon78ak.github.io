@@ -81,18 +81,21 @@
       "title": "Я в контакте"
     }
   ],
-  "sertificates": [
+  "certificates": [
     {
-      "name": "сертификат Профессиональный HTML&CSS. уровень 1",
-      "link": "https://"
+      "name": "HTML-basic",
+      "link": "https://",
+      "title": "сертификат Профессиональный HTML&CSS. уровень 1"
     },
     {
-      "name": "сертификат Профессиональный HTML&CSS. уровень 2",
-      "link": "https://"
+      "name": "HTML-advanced",
+      "link": "https://",
+      "title": "сертификат Профессиональный HTML&CSS. уровень 2"
     },
     {
-      "name": "сертификат Профессиональный JavaScript, уровень 1",
-      "link": "https://"
+      "name": "JS-basic",
+      "link": "https://",
+      "title": "сертификат Профессиональный JavaScript, уровень 1"
     }
   ]
 }

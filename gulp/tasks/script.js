@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function () {
-  $.gulp.task('js', function () {
+  $.gulp.task('script', function () {
     return $.gulp.src('./source/js/*.js')
       .pipe($.gp.plumber({
         errorHandler: $.gp.notify.onError(function (error) {
@@ -12,6 +12,6 @@ module.exports = function () {
         })
       }))
       .pipe($.gulp.dest('./build/js'))
-      .pipe($.gulp.dest('./js'));
+      .pipe($.gulp.dest('./js'))
   });
 };
