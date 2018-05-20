@@ -1,8 +1,8 @@
 'use strict';
 
-$(function () {
-  alert('works!');
-});
+// $(function () {
+//   alert('works!');
+// });
 
 var animateBlocks = (function () {
   var items = $('.project');

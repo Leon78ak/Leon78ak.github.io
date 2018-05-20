@@ -84,17 +84,17 @@
   "certificates": [
     {
       "name": "HTML-basic",
-      "link": "https://",
+      "link": "https://assets.htmlacademy.ru/certificates/intensive/43/430697.pdf",
       "title": "сертификат Профессиональный HTML&CSS. уровень 1"
     },
     {
       "name": "HTML-advanced",
-      "link": "https://",
+      "link": "https://assets.htmlacademy.ru/certificates/intensive/47/430697.pdf",
       "title": "сертификат Профессиональный HTML&CSS. уровень 2"
     },
     {
       "name": "JS-basic",
-      "link": "https://",
+      "link": "https://assets.htmlacademy.ru/certificates/intensive/65/430697.pdf",
       "title": "сертификат Профессиональный JavaScript, уровень 1"
     }
   ]

@@ -3,12 +3,13 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 // var pageHeader = document.querySelector('.page-header');
-// var portfolioButton = document.querySelector('.main-nav__item a[href="#portfolio"]');
+// var portfolioButton = document.querySelector('.main-nav__item a[href='#portfolio']');
 var portfolioTitle = document.querySelector('.portfolio__title');
 var aboutTitle = document.querySelector('.about__title');
 var modal = document.querySelector('.modal');
 var feedbackButton = document.querySelector('.contacts__feed-back')
-var overlay = document.querySelector(".overlay");
+var overlay = document.querySelector('.overlay');
+var modalClose = modal.querySelector('.modal__closed');
 var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
@@ -27,18 +28,23 @@ navToggle.addEventListener('click', function() {
 });
 
 if (feedbackButton) {
-  feedbackButton.addEventListener("click", function (event) {
+  feedbackButton.addEventListener('click', function (event) {
     event.preventDefault();
-    modal.classList.add("modal--show");
-    overlay.classList.add("overlay--show");
+    modal.classList.add('modal--show');
+    overlay.classList.add('overlay--show');
   });
 }
 
-window.addEventListener("keydown", function (event) {
+modalClose.addEventListener('click', function (event) {
+  modal.classList.remove('modal--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function (event) {
   if (event.keyCode === ESC_KEYCODE) {
-    if ((modal.classList.contains("modal--show")) && (overlay.classList.contains("overlay--show"))) {
-      modal.classList.remove("modal--show");
-      overlay.classList.remove("overlay--show");
+    if ((modal.classList.contains('modal--show')) && (overlay.classList.contains('overlay--show'))) {
+      modal.classList.remove('modal--show');
+      overlay.classList.remove('overlay--show');
     }
   }
 });
