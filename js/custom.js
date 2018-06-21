@@ -106,7 +106,7 @@ function showSection(section) {
   var reqSection = $('.section').filter('[data-section="' + direction + '"]');
   var reqSectionPos = reqSection.offset().top;
 
-  $('body, html').animate({scrollTop: reqSectionPos - 20}, 500);
+  $('body, html').animate({scrollTop: reqSectionPos}, 500);
 }
 
 function checkSection() {
