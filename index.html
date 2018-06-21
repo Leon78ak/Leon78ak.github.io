@@ -21,19 +21,19 @@
                 <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
                 <div class="main-nav__container">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item"><a class="main-nav__link" href="#" data-hover="Обо мне">Обо мне</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#" data-hover="Портфолио">Портфолио</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#" data-hover="Контакты">Контакты</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#about" data-hover="Обо мне">Обо мне</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#portfolio" data-hover="Портфолио">Портфолио</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#contacts" data-hover="Контакты">Контакты</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="page-header__container">
-                <h1 class="page-header__title">Александр Кокорев<span class="page-header__title--highlight">_ junior front-end developer</span></h1><a class="btn  page-header__btn  btn--scale-effect"><span>мои работы</span></a>
+                <h1 class="page-header__title">Александр Кокорев<span class="page-header__title--highlight">_ junior front-end developer</span></h1><a class="btn  page-header__btn  btn--scale-effect" href="#portfolio"><span>мои работы</span></a>
             </div>
         </div>
     </header>
     <main class="page-main">
-        <section class="portfolio">
+        <section class="portfolio  section" data-section="portfolio">
             <div class="portfolio__wrapper">
                 <h2 class="portfolio__title  animate" data-animation="toRight">Мои работы</h2>
                 <article class="project  animate-project">
@@ -115,7 +115,7 @@
                 </article>
             </div>
         </section>
-        <section class="about">
+        <section class="about  section" data-section="about">
             <div class="about__wrapper">
                 <h2 class="about__title  animate" data-animation="toRight">Обо мне</h2>
                 <p class="about__text">Привет! Я — начинающий front-end разработчик, успешно законил программу интенсивов «Профессия Фронтенд-разработчик» от HTML Academy.</p>
@@ -130,7 +130,7 @@
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <section class="contacts">
+            <section class="contacts  section" data-section="contacts">
                 <h2 class="contacts__title  animate" data-animation="toRight">Контакты</h2><a class="btn  contacts__feed-back  animate" data-animation="toLeft">Написать мне</a>
                 <div class="contacts__socials">
                     <ul class="socials">
